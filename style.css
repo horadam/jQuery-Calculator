@@ -41,6 +41,13 @@ input {
     background-color: rgb(131, 190, 190);
     margin: 5px 0;
     color: gray;
+    outline:0;
+    transition:border-color 1s;
+}
+
+input:focus, button:focus {
+    
+    border: 2px solid rgb(179, 231, 231)
 }
 
 button {
@@ -51,6 +58,7 @@ button {
     border: 1px solid rgb(132, 141, 141);
     border-radius:3px;
     color:gray;
+    outline:0;
 }
 
 #answer {
@@ -62,6 +70,10 @@ button {
     border-radius:5px;
     font-size: 15px;
     color: gray;
+}
+
+.nums, input, button,#answer {
+    cursor: pointer;
 }
 
 
